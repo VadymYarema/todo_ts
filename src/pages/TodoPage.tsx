@@ -28,8 +28,8 @@ export const TodosPage: React.FC = () => {
   }
 
   const toggleHandler = (id: number) => {
-    setTodos(prev =>
-      prev.map(todo => {
+    setTodos(
+      todos.map(todo => {
         if (todo.id === id) {
           todo.completed = !todo.completed
         }
